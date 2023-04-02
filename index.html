@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div id="Calculadora">
+            <div id="titulo">
+                <span>Calculadora</span>
+            </div>
+            <div id="valor">
+                <span id="Vantigo"></span>
+                <br>
+                <span id="Vatual">0</span>
+            </div>
+            <div id="memoria">
+                <table>
+                    <tr>
+                        <td><button onclick="Memoria('C')">MC</button></td>
+                        <td><button onclick="Memoria('R')">MR</button></td>
+                        <td><button onclick="Memoria('+')">M+</button></td>
+                        <td><button onclick="Memoria('-')">M-</button></td>
+                        <td><button onclick="Memoria('S')">MS</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="digitos">
+                <table>
+                    <tr>
+                        <td><button onclick="Operacao('^')" class="Ope">xⁿ</button></td>
+                        <td><button onclick="Apagar('v')" class="Ope">CE</button></td>
+                        <td><button onclick="Apagar('t')" class="Ope">C</button></td>
+                        <td><button onclick="Apagar('u')" class="Ope"><-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="ColocarParenteses('(')" class="Ope">(</button></td>
+                        <td><button onclick="ColocarParenteses(')')" class="Ope">)</button></td>
+                        <td><button onclick="Operacao('√')" class="Ope">√</button></td>
+                        <td><button onclick="Operacao('/')" class="Ope">÷</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="AdcionarChar('7')" class="Num">7</button></td>
+                        <td><button onclick="AdcionarChar('8')" class="Num">8</button></td>
+                        <td><button onclick="AdcionarChar('9')" class="Num">9</button></td>
+                        <td><button onclick="Operacao('*')" class="Ope">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="AdcionarChar('4')" class="Num">4</button></td>
+                        <td><button onclick="AdcionarChar('5')" class="Num">5</button></td>
+                        <td><button onclick="AdcionarChar('6')" class="Num">6</button></td>
+                        <td><button onclick="Operacao('-')" class="Ope">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="AdcionarChar('1')" class="Num">1</button></td>
+                        <td><button onclick="AdcionarChar('2')" class="Num">2</button></td>
+                        <td><button onclick="AdcionarChar('3')" class="Num">3</button></td>
+                        <td><button onclick="Operacao('+')" class="Ope">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="Num">+/-</button></td>
+                        <td><button onclick="AdcionarChar('0')" class="Num">0</button></td>
+                        <td><button onclick="AdcionarChar('.')" class="Num">,</button></td>
+                        <td><button onclick="Igual()" id="igual">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

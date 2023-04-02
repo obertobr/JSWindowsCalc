@@ -1,0 +1,156 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Calibri";
+    color: white;
+    margin: 0;
+}
+
+body > table {
+    width: 100%;
+    height: 100%;
+}
+
+body > table td {
+    background-color: black;
+}
+
+#Calculadora {
+    background-image: radial-gradient(100px at calc(var(--mouse-x) * 100%) calc(var(--mouse-y, 0) * 100%), rgb(118, 119, 121) 0%, rgb(34, 34, 36) 100%);
+    background-color: transparent;
+    height: 502px;
+    width: 322px;
+    overflow: hidden;
+}
+
+@media only screen and (orientation: portrait) {
+    #Calculadora {
+        height: 100%;
+        width: 100%;
+    }
+    #Vantigo {
+        white-space: nowrap;
+        font-size: 5vw !important;
+    }
+    
+    #Vatual {
+        font-size: 25vw !important;
+    }
+    #digitos button {
+        font-size: 5vw !important;
+    }
+    #memoria button {
+        font-size: 5vw !important;
+    }
+
+
+}
+
+#titulo {
+    height: 8.1%;
+    background-color: rgb(34, 34, 36);
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#valor {
+    height: 20%;
+    background-color: rgb(34, 34, 36);
+    padding: 10px;
+    text-align: right;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+#Vantigo {
+    position:absolute;
+    transform: translateX(-100%);
+    color: rgb(163, 163, 163);
+}
+
+#Vatual {
+    font-size: 60px;
+}
+
+#memoria {
+    height: 6.2%;
+}
+
+#memoria table,#memoria tr,#memoria td {
+    border: 2px solid rgb(34, 34, 36);
+    border-collapse: collapse;
+}
+
+#memoria > table{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    table-layout: fixed;
+    border-bottom: 3px solid rgb(34, 34, 36);
+    border-left: 20px solid rgb(34, 34, 36);
+    border-right: 20px solid rgb(34, 34, 36);
+}
+
+#memoria button {
+    background-color: rgb(34, 34, 36);
+    color: white;
+    border: 1px solid transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 0;
+}
+
+#memoria button:hover {
+    background-color: rgba(48, 48, 48, 0.705)
+}
+
+#digitos {
+    height: 61%;
+}
+
+#digitos table,#digitos tr,#digitos td {
+    border: 1px solid rgb(34, 34, 36);
+    border-collapse: collapse;
+}
+
+#digitos > table{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    table-layout: fixed;
+    border-bottom: 5px solid rgb(34, 34, 36);
+    border-left: 5px solid rgb(34, 34, 36);
+    border-right: 5px solid rgb(34, 34, 36);
+}
+
+#digitos button {
+    color: white;
+    border: 1px solid transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+.Ope {
+    background-color: rgb(18, 18, 20);
+}
+
+.Num {
+    background-color: rgb(6, 6, 7);
+}
+
+#igual {
+    background-color: rgb(17, 91, 97);
+}
+
+#digitos button:hover {
+    background-color: rgba(48, 48, 48, 0.705)
+}
+
+#igual:hover {
+    background-color: rgb(3, 167, 178) !important;
+}
